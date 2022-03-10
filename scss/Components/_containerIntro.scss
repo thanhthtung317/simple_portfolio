@@ -1,6 +1,10 @@
 @use '../Abstract/' as *;
+
 .container-intro{
     width: 80%;
+    @include mobile{
+        width: 90%;
+    }
     height: 100vh;
     display: grid;
     place-content: center;
@@ -9,6 +13,7 @@
     text-transform: uppercase;
     .title{
         font-size: 3rem;
+
     }
     .subtitle{
         font-size: 2rem;
