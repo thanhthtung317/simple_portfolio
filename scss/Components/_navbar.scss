@@ -1,0 +1,77 @@
+@use '../Abstract/' as *;
+
+header{
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .container-brand-logo{
+        padding: 1em;
+        @include mobile{
+            padding-top: 0;
+            margin-top: -.7em;
+        }
+        i{
+            font-size: 3rem;
+            color: white;
+        }
+    }
+    .toggle-nav-btn{
+        position: fixed;
+        top: 2rem;
+        right:2rem;
+        z-index: 9999;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        display: none;
+        @include mobile{
+            display: block;
+        }
+        i{
+            font-size: 2rem;
+            color: white;
+        }
+    }
+    nav{
+        background-color: $black_translucent;
+        backdrop-filter: blur(.3rem);
+        padding-left: 1em;
+        @include mobile{
+            position: fixed;
+            inset: 0 0 0 30%;
+            transform: translateX(100%);
+            transition: 1s;
+            ul{
+                flex-direction: column;
+                li{
+                    margin-left: 0.7em;
+                    a{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            li{
+                font-size: 2rem;
+                margin-right: 1em;
+                a{
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    nav[data-visible = 'true']{
+        transform: translateX(0%);
+    }
+}
+

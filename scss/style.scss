@@ -1,0 +1,26 @@
+@use './Abstract/' as *;
+@use './Components/' as *;
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, .4) ,rgba(0, 0, 0, .4)), url('https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    color: $white;
+}
+
+main{
+    width: 100vw;
+}
