@@ -40,6 +40,8 @@ header .toggle-nav-btn i {
   color: white;
 }
 header nav {
+  overflow: hidden;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(0.3rem);
   padding-left: 1em;
@@ -311,6 +313,12 @@ footer ul li a:visited {
   grid-gap: 0.7em;
 }
 @media (min-width: 1024px) {
+  .section-photo .container-photos {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 150px;
+  }
+}
+@media (max-width: 559px) {
   .section-photo .container-photos {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 150px;

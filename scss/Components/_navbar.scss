@@ -36,6 +36,8 @@ header{
         }
     }
     nav{
+        overflow: hidden;
+        z-index: 1000;
         background-color: $black_translucent;
         backdrop-filter: blur(.3rem);
         padding-left: 1em;
