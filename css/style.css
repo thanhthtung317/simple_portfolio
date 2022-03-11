@@ -67,10 +67,10 @@ header nav ul {
   padding: 0;
 }
 header nav ul li {
-  font-size: 2rem;
   margin-right: 1em;
 }
 header nav ul li a {
+  font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
   color: white;
@@ -109,6 +109,7 @@ header nav[data-visible=true] {
   min-height: 100vh;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 2em;
 }
 .section-about .title {
   font-size: 4rem;
@@ -156,15 +157,15 @@ header nav[data-visible=true] {
   grid-gap: 2em;
 }
 .section-project .section-center-container .container-project-img {
-  height: 17rem;
+  min-height: 17rem;
   overflow: hidden;
   display: grid;
   place-content: center;
 }
 .section-project .section-center-container .container-project-img img {
   object-fit: cover;
-  width: 500px;
-  height: 450px;
+  width: 700px;
+  height: 400px;
   transition: 1s;
 }
 .section-project .section-center-container .container-project-img img:hover {
@@ -222,6 +223,74 @@ footer ul li a:visited {
     backdrop-filter: blur(0.2rem);
   }
 }
+.section-skills {
+  min-height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+.section-skills .title {
+  font-size: 4rem;
+}
+.section-skills .skills-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  justify-content: center;
+  align-items: center;
+}
+.section-skills .skills-container .skill-container-center {
+  position: relative;
+  width: 80%;
+}
+.section-skills .skills-container .skill-container-center .container-skill-percent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.section-skills .skills-container .skill-container-center .container-skill-percent span {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+.section-skills .skills-container .skill-container-center .line {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 4px;
+  background-color: #b9b9b9;
+}
+.section-skills .skills-container .skill-container-center .line-html::before {
+  position: absolute;
+  content: "";
+  width: 85%;
+  background-color: #f34b4b;
+  height: 4px;
+}
+.section-skills .skills-container .skill-container-center .line-css::before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  background-color: #f34b4b;
+  height: 4px;
+}
+.section-skills .skills-container .skill-container-center .line-js::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  background-color: #f34b4b;
+  height: 4px;
+}
+.section-skills .skills-container .skill-container-center .line-reactjs::before {
+  position: absolute;
+  content: "";
+  width: 60%;
+  background-color: #f34b4b;
+  height: 4px;
+}
+
 html {
   scroll-behavior: smooth;
 }

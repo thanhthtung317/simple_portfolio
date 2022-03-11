@@ -16,14 +16,14 @@
         .container-project{
             // border: 2px solid $white;
             &-img{
-                height: 17rem;
+                min-height: 17rem;
                 overflow: hidden;
                 display: grid;
                 place-content: center;
                 img{
                     object-fit: cover;
-                    width: 500px;
-                    height: 450px;
+                    width: 700px;
+                    height: 400px;
                     transition: 1s;
                 }
                 img:hover{

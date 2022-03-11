@@ -1,0 +1,69 @@
+@use '../Abstract/' as *;
+
+.section-skills{
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    .title{
+        font-size: 4rem;
+    }
+    .skills-container{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+        justify-content: center;
+        align-items: center;
+        .skill-container-center{
+            position: relative;
+            width: 80%;
+            .container-skill-percent{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto;
+                span{
+                    font-size: 1.4rem;
+                    text-transform: capitalize;
+                }
+            }
+            .line{
+                position: absolute;
+                margin: 0 auto;
+                width: 100%;
+                height: 4px;
+                background-color: $grey;
+            }
+            .line-html::before{
+                position: absolute;
+                content: '';
+                width: 85%;
+                background-color: $red;
+                height: 4px;
+            }
+            .line-css::before{
+                position: absolute;
+                content: '';
+                width: 75%;
+                background-color: $red;
+                height: 4px;
+            }
+            .line-js::before{
+                position: absolute;
+                content: '';
+                width: 80%;
+                background-color: $red;
+                height: 4px;
+            }
+            .line-reactjs::before{
+                position: absolute;
+                content: '';
+                width: 60%;
+                background-color: $red;
+                height: 4px;
+            }
+        }
+    }
+}
