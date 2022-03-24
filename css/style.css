@@ -410,6 +410,7 @@ footer ul li a:visited {
   }
 }
 .section-contact .container-center form .field label {
+  display: inline-block;
   text-transform: capitalize;
 }
 .section-contact .container-center form .field input {
